@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var spans=$("#divTest span");
+			for (var i = 0; i <spans.length; i++) {
+				    (function(num){
+				    	spans[i].onclick=function(){
+				    		alert(num);	
+				    	}
+					})(i);
+					
+				}
+			});
+</script>
+
+</head>
+<body>
+<div id="divTest">  
+        <span>0</span> <span>1</span> <span>2</span> <span>3</span>  
+</div>  
+<div id="divTest2">  
+        <span>0</span> <span>1</span> <span>2</span> <span>3</span>  
+</div> 
+
+</body>
+</html>
