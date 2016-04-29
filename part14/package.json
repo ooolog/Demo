@@ -1,0 +1,11 @@
+{
+    "name": "part_redis",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "start": "node ./bin/www"
+    },
+    "dependencies": {
+       "redis":"2.6.0-2"
+    }
+}
